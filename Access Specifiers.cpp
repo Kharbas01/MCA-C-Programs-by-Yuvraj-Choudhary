@@ -5,15 +5,14 @@ using namespace std;
 
 class Student
 {
-    // By default, members of a class are 'private'.
-    // It's good practice to explicitly state it.
+    
 private:
     string name;
     int marks;
-    int attendance; // As a percentage
+    int attendance; 
 
 public:
-    // This is the PUBLIC interface. These functions can be called from main().
+    
     void setupStudent(string studentName, int studentMarks, int studentAttendance)
     {
         name = studentName;
@@ -30,7 +29,7 @@ public:
 
     void checkPassingEligibility()
     {
-        // This public method can access the private 'marks' and 'attendance'
+       
         if (marks >= 40 && attendance > 75)
         {
             cout << name << " is eligible to pass." << endl;

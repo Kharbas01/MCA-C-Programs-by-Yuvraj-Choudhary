@@ -1,23 +1,22 @@
 #include <iostream>
-#include <string> // It's good practice to include the string header
-
+#include <string> 
 using namespace std;
 
 class ATM {
-private: // Data members should ideally be private to protect them
+private: 
     string accountHolderName;
-    long accountNumber; // Account numbers can be long
+    long accountNumber; 
     double balance;
 
 public:
-    // This function initializes the account details
+  
     void setupAccount(string name, long accNum, double initialBalance) {
         accountHolderName = name;
         accountNumber = accNum;
         balance = initialBalance;
     }
 
-    // Displays the current account details
+   
     void showDetails() {
         cout << "------------------------\n";
         cout << "Account Holder: " << accountHolderName << endl;
@@ -26,7 +25,7 @@ public:
         cout << "------------------------\n";
     }
 
-    // Adds an amount to the balance
+   
     void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -36,11 +35,11 @@ public:
         }
     }
 
-    // Subtracts an amount from the balance if sufficient funds exist
+   
     void withdraw(double amount) {
-        // Corrected the condition: use <= for comparison and check for a positive amount
+        
         if (amount > 0 && amount <= balance) {
-            balance -= amount; // Use -= for subtraction assignment
+            balance -= amount; 
             cout << "SUCCESS: $" << amount << " withdrawn." << endl;
         } else {
             cout << "ERROR: Invalid amount or insufficient balance." << endl;

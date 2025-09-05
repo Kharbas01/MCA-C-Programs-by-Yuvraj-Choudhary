@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 #include <cstdlib>
 #include <ctime>
 #include <thread>
@@ -34,16 +34,28 @@ int main() {
         posA += (rand() % 3) - 1;
         posB += (rand() % 3) - 1;
 
+<<<<<<< HEAD
        
         if (posA < 0) posA = 0;
         if (posB < 0) posB = 0;
 
+=======
+        
+        if (posA < 0) posA = 0;
+        if (posB < 0) posB = 0;
+
+       
+>>>>>>> 1b08db8 (Updated programs - added new files)
         drawCar('A', posA);
         drawCar('B', posB);
         cout << "------------------------------------------" << endl;
 
 
+<<<<<<< HEAD
        
+=======
+        
+>>>>>>> 1b08db8 (Updated programs - added new files)
         this_thread::sleep_for(chrono::milliseconds(300)); 
     }
 
