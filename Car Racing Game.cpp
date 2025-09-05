@@ -19,7 +19,7 @@ int main() {
 
     int posA = 0;
     int posB = 0;
-    const int trackLength = 50; // Let's define a finish line
+    const int trackLength = 50; 
 
     cout << "Race Starting in 3... 2... 1... GO!" << endl;
     this_thread::sleep_for(chrono::seconds(1));
@@ -44,7 +44,7 @@ int main() {
 
 
        
-        this_thread::sleep_for(chrono::milliseconds(300)); // Corrected syntax
+        this_thread::sleep_for(chrono::milliseconds(300)); 
     }
 
    
